@@ -23,12 +23,15 @@
       </div>
       <div class="ab-img"></div>
     </section>
-    <br><br><br><br><br><br><br><br>
+    <OurTeam />
+    <Contact id="contact"/>
   </div>
 </template>
 
 <script setup>
 import NavBar from './NavBar.vue'
+import Contact from './Contact.vue';
+import OurTeam from './OurTeam.vue';
 </script>
 
 <style scoped>

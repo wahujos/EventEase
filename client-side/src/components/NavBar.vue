@@ -15,10 +15,10 @@
             <router-link to="/services">Service</router-link>
           </li>
           <li>
-            <router-link to="/contact">Contact</router-link>
+            <a href="#contact" to="/contact">Contact</a href="#contact">
           </li>
           <button>
-            <router-link to="/book">Book a Service</router-link>
+            <router-link to="/register">Login / SignUp</router-link>
           </button>
         </ul>
       </div>
@@ -30,7 +30,7 @@
 
 </script>
 
-<style>
+<style scoped>
 .navbar {
   padding: 10px 0;
 }

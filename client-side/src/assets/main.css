@@ -13,7 +13,7 @@
 }
 
 .heroMsg h1 {
-  font-size: 120px;
+  font-size: 100px;
   text-shadow: 2px 2px 400px #333;
   color: #fff;
   white-space: normal;
@@ -80,4 +80,20 @@
   height: 560px;
   background-size: cover;
   margin: auto 0 0 100px;
+}
+
+.btn-white {
+  color: #333;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.btn-white:hover {
+  background-color: #555;
+  color: #fff;
+  transition: all ease 0.3s;
 }
