@@ -167,7 +167,7 @@ margin: 50px auto 20px auto;
     overflow-x: hidden; /* Hide scrollbar */
     scroll-behavior: smooth; /* Smooth scrolling behavior */
     width: 100%;
-    height: 500px; /* Adjust height as needed */
+    height: 200px; /* Adjust height as needed */
 }
 
 .c1 {
@@ -185,7 +185,7 @@ margin: 50px auto 20px auto;
         font-family: 'Truculenta', sans-serif;
         font-weight: 750;
         text-align: center;
-        margin: -150px 0 0 -50px;
+        margin: -125px 0 0 -50px;
     }
     h5 {
         display: block;
@@ -201,7 +201,7 @@ margin: 50px auto 20px auto;
 
 .card1 {
     flex: 0 0 auto; /* Prevent cards from stretching */
-    width: 500px; /* Adjust card width as needed */
+    width: 200px; /* Adjust card width as needed */
     height: 100%; /* Make cards the same height as the slider */
     background-color: #222;
     margin-right: 50px; /* Add spacing between cards */
@@ -228,7 +228,7 @@ margin: 50px auto 20px auto;
         color: #fff;
         font-size: 30px;
         text-align: center;
-        margin: -150px 0 0 -50px;
+        margin: -125px 0 0 -50px;
     }
     h5 {
         display: block;
@@ -245,7 +245,7 @@ margin: 50px auto 20px auto;
 
 .card2 {
     flex: 0 0 auto; /* Prevent cards from stretching */
-    width: 500px; /* Adjust card width as needed */
+    width: 200px; /* Adjust card width as needed */
     height: 100%; /* Make cards the same height as the slider */
     background-color: #222;
     margin-right: 50px; /* Add spacing between cards */
@@ -272,7 +272,7 @@ margin: 50px auto 20px auto;
         color: #fff;
         font-size: 30px;
         text-align: center;
-        margin: -150px 0 0 -50px;
+        margin: -125px 0 0 -50px;
     }
     h5 {
         display: block;
@@ -289,7 +289,7 @@ margin: 50px auto 20px auto;
 
 .card3 {
     flex: 0 0 auto; /* Prevent cards from stretching */
-    width: 500px; /* Adjust card width as needed */
+    width: 200px; /* Adjust card width as needed */
     height: 100%; /* Make cards the same height as the slider */
     background-color: #222;
     margin-right: 50px; /* Add spacing between cards */
@@ -316,7 +316,7 @@ margin: 50px auto 20px auto;
         color: #fff;
         font-size: 30px;
         text-align: center;
-        margin: -150px 0 0 -50px;
+        margin: -125px 0 0 -50px;
     }
     h5 {
         display: block;
@@ -333,7 +333,7 @@ margin: 50px auto 20px auto;
 
 .card4 {
     flex: 0 0 auto; /* Prevent cards from stretching */
-    width: 500px; /* Adjust card width as needed */
+    width: 200px; /* Adjust card width as needed */
     height: 100%; /* Make cards the same height as the slider */
     background-color: #222;
     margin-right: 50px; /* Add spacing between cards */
@@ -360,7 +360,7 @@ margin: 50px auto 20px auto;
         color: #fff;
         font-size: 30px;
         text-align: center;
-        margin: -150px 0 0 -50px;
+        margin: -125px 0 0 -50px;
     }
     h5 {
         display: block;
@@ -377,7 +377,7 @@ margin: 50px auto 20px auto;
 
 .card5 {
     flex: 0 0 auto; /* Prevent cards from stretching */
-    width: 500px; /* Adjust card width as needed */
+    width: 200px; /* Adjust card width as needed */
     height: 100%; /* Make cards the same height as the slider */
     background-color: #222;
     margin-right: 50px; /* Add spacing between cards */
@@ -404,7 +404,7 @@ margin: 50px auto 20px auto;
         color: #fff;
         font-size: 30px;
         text-align: center;
-        margin: -150px 0 0 -50px;
+        margin: -125px 0 0 -50px;
     }
     h5 {
         display: block;
@@ -421,7 +421,7 @@ margin: 50px auto 20px auto;
 
 .card6 {
     flex: 0 0 auto; /* Prevent cards from stretching */
-    width: 500px; /* Adjust card width as needed */
+    width: 200px; /* Adjust card width as needed */
     height: 100%; /* Make cards the same height as the slider */
     background-color: #222;
     margin-right: 50px; /* Add spacing between cards */

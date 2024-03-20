@@ -9,17 +9,19 @@ catering = Blueprint("catering", __name__)
 @catering.route("/catering", strict_slashes=False)
 def get_catering_services():
     """
-    returns all catering services
+    Returns all catering services
     """
-    useful_data = {}
-    userdata = requests.get("https://dummyjson.com/users")
+    try:
+        userdata = requests.get("https://dummyjson.com/users")
+        userdata.raise_for_status()  # Raise exception for HTTP errors (4xx, 5xx)
 
-    if userdata.status_code == 200:
         useful_data = userdata.json()
-        users = useful_data['users']
+        users = useful_data.get('users', [])
         return jsonify({"users": users})
-
-    return jsonify({"message": "no data found"})
+    except requests.RequestException as e:
+        # Log the error
+        print("Error fetching catering data:", e)
+        return jsonify({"message": "Failed to fetch catering data"}), 500  # Internal Server Error
 
 @catering.route("/catering/<user_id>", strict_slashes=False)
 def get_a_catering_service(user_id):

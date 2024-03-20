@@ -19,6 +19,20 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --vt-c-btn-light-1: rgb(165, 163, 163);
+  --vt-c-btn-light-2: rgba(165, 163, 163, 0.59);
+  --vt-c-btn-dark-1: rgb(49, 49, 49);
+  --vt-c-btn-dark-2: rgba(49, 49, 49, 0.59);
+
+  --vt-c-link-light-1: white;
+  --vt-c-link-light-2: rgba(255, 255, 255, 0.642);  
+
+  --vt-c-card-light-1: #f1efef;
+  --vt-c-card-light-2: #74737389;
+  --vt-c-card-dark-1: #272020;
+  --vt-c-card-dark-2: #2720208b;
+
 }
 
 /* semantic color variables for this project */
@@ -32,6 +46,17 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
+
+  --color-btn: var(--vt-c-btn-light-1);
+  --color-btn-hover: var(--vt-c-btn-light-2);
+
+  --color-link: var(--vt-c-link-light-1);
+  --color-link-hover: var(--vt-c-link-light-2);
+
+  --color-card: var(--vt-c-card-light-1);
+  --color-card-hover: var(--vt-c-card-light-2);
+  
+  --invert-logo: invert(0.6);
 
   --section-gap: 160px;
 }
@@ -47,6 +72,16 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+
+    --color-btn: var(--vt-c-btn-dark-1);
+    --color-btn-hover: var(--vt-c-btn-dark-2);
+
+    --color-card: var(--vt-c-card-dark-1);
+    --color-card-hover: var(--vt-c-card-dark-2);    
+
+    --invert-logo: invert(0);
+
+
   }
 }
 

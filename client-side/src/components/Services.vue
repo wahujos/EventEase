@@ -21,7 +21,11 @@
             event among our array of Catering Solutionists 
             tailored to your every culinary need.
           </p><br>
-          <span class="btn-white">Find a Caterer</span>
+          <span class="btn-white">
+            <router-link to="/services/caterers">
+              Find a Caterer
+            </router-link>
+          </span>
         </div>
         <div class="food"></div>
       </div>
@@ -34,7 +38,11 @@
             charismatic and skilled hosts, ensuring 
             seamless engagement throughout.
           </p><br>
-          <span class="btn-white">Find your MC</span>
+          <span class="btn-white">
+            <router-link to="/services/emcees">
+              Find an MC
+            </router-link>
+          </span>
         </div>
         <div class="ceremony"></div>
       </div>
@@ -46,7 +54,11 @@
             your gathering among our selection of dynamic 
             Music Bands, setting the tone for unforgettable moments.
           </p><br>
-          <span class="btn-white">Find your Sound</span>
+          <span class="btn-white">
+            <router-link to="/services/artists">
+              Find a Band
+            </router-link>
+          </span>
         </div>
         <div class="music"></div>
       </div>
@@ -58,17 +70,21 @@
             ensuring your event is equipped with the finest 
             audiovisual gear for a seamless experience.
           </p><br>
-          <span class="btn-white">Hire equipment</span>
+          <span class="btn-white">
+            <router-link to="/services/equipment">
+              Hire Equipment
+            </router-link>
+          </span>
         </div>
         <div class="equip"></div>
       </div>
-    </div><br>
+    </div><br><br><br>
     <Contact id="contact"/>
   </div>
 </template>
 
 <script lang="js">
-  import NavBar from './NavBar.vue';
+  import NavBar from './NavBar2.vue';
   import Contact from './Contact.vue';
   import axios from 'axios';
 
@@ -110,7 +126,7 @@
 <style scoped>
 .start {
   background-image: url('../assets/hero-one.jpg');
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   background-size: cover;
 }
@@ -119,8 +135,8 @@
   font-family: "Truculenta", sans-serif;
   font-size: 100px;
   text-align: center;
-  padding-top: 150px;
-  color: white;
+  padding-top: 140px;
+  color: var(--color-link); /* Use semantic color variable for heading */
   text-transform: uppercase;
   text-shadow: 2px 2px 50px #333;
 }
@@ -129,13 +145,13 @@
   font-family: "Open Sans", sans-serif;
   text-align: center;
   text-shadow: 2px 2px 50px #333;
-  color: white;
+  color: var(--color-link); /* Use semantic color variable for text */
   font-size: 20px;
-  margin-top: 170px;
+  margin-top: 100px;
 }
 
 .start a {
-  color: white;
+  color: var(--color-link); /* Use semantic color variable for links */
   text-decoration: none;
   letter-spacing: 1.2px;
 }
@@ -150,11 +166,19 @@
   align-items: center;
 }
 
-#catering {
+/* Apply color variables to sections */
+#catering,
+#mc,
+#equipment,
+#music_band {
   margin: 120px 50px auto 50px;
-  background-color: #333;
+  background-color: var(--color-background);
   padding: 65px 95px;
   border-radius: 5px;
+  transition: all ease-in-out 0.3s;
+}
+
+#catering {
   display: flex;
   background-image: url('../assets/food-two.jpg');
   background-position: right;
@@ -163,18 +187,7 @@
   transition: all ease 0.5s;
 }
 
-#catering:hover {
-  box-shadow: 10px 10px 40px 10px #121212;
-  transform: scale(1.1);
-  transition: transform 0.5s;
-
-}
-
 #mc {
-  margin: 120px 50px auto 50px;
-  background-color: #333;
-  padding: 65px 95px;
-  border-radius: 5px;
   display: flex;
   background-image: url('../assets/emcee.webp');
   background-position: right;
@@ -182,46 +195,18 @@
   background-repeat: no-repeat;
 }
 
-#mc:hover {
-  box-shadow: 10px 10px 40px 10px #121212;
-  transform: scale(1.1);
-  transition: transform 0.5s;
-}
-
-#equipment {
-  margin: 120px 50px auto 50px;
-  background-color: #333;
-  padding: 65px 95px;
-  border-radius: 5px;background-image: url('../assets/drummer.jpg');
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#equipment:hover {
-  box-shadow: 10px 10px 40px 10px #121212;
-  transform: scale(1.1);
-  transition: transform 0.5s;
-}
-
 #music_band {
-  margin: 120px 50px auto 50px;
-  background-color: #333;
-  padding: 65px 95px;
   border-radius: 5px;background-image: url('../assets/hero-two.jpg');
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-#music_band:hover {
-  box-shadow: 10px 10px 40px 10px #121212;
-  transform: scale(1.1);
-  transition: transform 0.5s;
-}
-
-.txt-c {
-  background-color: #3333334f;
+#equipment {
+  border-radius: 5px;background-image: url('../assets/drummer.jpg');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .txt-c h1 {
@@ -229,7 +214,7 @@
   font-size: 60px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-heading); /* Use semantic color variable for heading */
 }
 
 .txt-c p {
@@ -242,11 +227,14 @@
   text-align: justify;
 }
 
-.food_ {
-  background-image: url('../assets/open_two.jpg');
-  background-size: cover;
-  height: 400px;
-  width: 100%;
-  border-radius: 5px;
+/* Apply color variables to hover effect */
+#catering:hover,
+#mc:hover,
+#equipment:hover,
+#music_band:hover {
+  box-shadow: 5px 5px 70px 5px var(--vt-c-black-mute);
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
+
 </style>
