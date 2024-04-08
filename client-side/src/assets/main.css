@@ -15,7 +15,7 @@
 }
 
 .heroMsg h1 {
-  font-size: 95px;
+  font-size: 75px;
   text-shadow: 2px 2px 400px #333;
   color: #fff;
   white-space: normal;
@@ -41,7 +41,7 @@
 
 .ab-txt {
   width: 100%;
-  margin: 50px 0 0 80px;
+  margin: 50px 0 0 190px;
 }
 
 .ab-txt h2 {
@@ -58,6 +58,7 @@
   text-align: justify;
   line-height: 2;
   color: #999;
+  width: 350px;
 }
 
 .ab-txt a {
@@ -78,10 +79,11 @@
 
 .ab-img {
   background-image: url('../assets/gardenguitar.jpeg');
-  width: 150%;
+  width: 100%;
   height: 560px;
   background-size: cover;
-  margin: auto 0 0 100px;
+  margin: 10px 70px 30px 100px;
+  border-radius: 750px;
 }
 
 .btn-white, .btn-white a {
@@ -98,4 +100,50 @@
   background-color: #555;
   color: #fff;
   transition: all ease 0.3s;
+}
+
+@media (max-width: 768px) {
+  #logo {
+    width: 25%;
+    filter: var(--invert-logo);
+  }
+
+  .heroMsg {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .heroMsg h1 {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+
+  .heroMsg p {
+    font-size: 20px;
+  }
+
+  .about-us {
+    display: block;
+  }
+
+  .ab-txt {
+    margin:  0 20px 50px;
+    text-align: center;
+  }
+
+  .ab-txt h2 {
+    font-size: 50px;
+  }
+
+  .ab-txt p {
+    width: 100%;
+    padding: 0 75px 0 75px;
+  }
+
+  .ab-img {
+    margin: 10px 0 30px 0;
+    border-radius: 0;
+    height: 150px;
+    background-position: center;
+  }
 }

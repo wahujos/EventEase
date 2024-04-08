@@ -19,10 +19,10 @@
                   <a href="https://www.instagram.com" target="_blank">
                       <img src="../assets/insta.png" alt="instagram">
                   </a>
-                  <a href="https://www.github.com/" target="_blank">
+                  <a href="https://github.com/wahujos/EventEase" target="_blank">
                       <img src="../assets/github.webp" alt="github">
                   </a>
-              </span><br><br>
+              </span><br>
               <span class="ftr">© 2024 <router-link to="/">Event Ease</router-link> | All Rights Reserved | <router-link to="/register">List Your Service</router-link></span>
           </div>
       </section>
@@ -93,5 +93,40 @@
   .ftr a:hover {
       text-decoration: underline;
       color: #555;
+  }
+
+  @media (max-width: 768px) {
+      .container {
+          flex-direction: row-reverse;
+          padding-left: 5%;
+      }
+      .call-us {
+          width: 100%;
+          height: 60vh;
+      }
+      .txt {
+          padding: 0 0 0 0;
+      }
+      .txt h1 {
+          font-size: 30px;
+      }
+      .txt p {
+          width: 100%;
+          font-size: 12px;
+          padding-right: 150px;
+          margin-top: 15px;
+      }
+  }
+
+  @media (max-width: 450px) {
+    .container {
+        padding-left: 1%;
+    }
+    .txt p {
+        display: none;
+    }
+    .call-us {
+        height: 40vh;
+    }
   }
   </style>

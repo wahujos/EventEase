@@ -124,12 +124,59 @@ export default {
   background-color: var(--color-btn);
   text-decoration: none;
   color: var(--color-text);
-  padding: 10px 20px;
-  font-size: 10px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 1em;
 }
 
 .txt a:hover {
   background-color: var(--color-btn-hover);
   transition: all ease 0.3s;
+}
+
+@media (max-width: 768px) {
+  .listed {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 85%;
+    margin: auto auto 45px auto;
+    height: 250px;
+  }
+
+  .card img {
+    width: 100px;
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  .txt {
+    width: 100%;
+    margin: 0 5px 0 20px;
+  }
+
+  .txt h2 {
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .txt h3 {
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .txt p {
+    font-size: 12px;
+  }
+
+  .txt a {
+    font-size: 8px;
+  }
 }
 </style>

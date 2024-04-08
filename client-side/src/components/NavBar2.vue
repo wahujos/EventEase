@@ -98,4 +98,12 @@
     text-shadow: 2px 2px 4px #000000;
   }
 }
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+  }
+}
 </style>

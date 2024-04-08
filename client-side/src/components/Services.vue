@@ -237,4 +237,53 @@
   transition: transform 0.5s;
 }
 
+@media (max-width: 768px) {
+  .contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #catering,
+  #mc,
+  #equipment,
+  #music_band {
+    margin: 50px 50px auto 50px;
+    padding: 25px 25px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+  }
+
+  .txt-c {
+    margin-left: 4%;
+  }
+
+  .txt-c h1 {
+    font-size: 40px;
+  }
+
+  .txt-c p {
+    width: 100%;
+    padding-right: 50%;
+    color: #fff;
+    filter: brightness(1.5);
+  }
+
+  .start {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+  }
+  .start h1 {
+    font-size: 40px;
+    padding-top: 50px;
+  }
+  .start p {
+    font-size: 15px;
+    margin-top: 50px;
+    padding: 0 50px;
+  }
+}
+
 </style>

@@ -3,7 +3,7 @@
     <section class="open">
     <NavBar />
       <div class="heroMsg">
-        <h1>Where happening people meet</h1>
+        <h1>Where happening<br> people meet</h1>
         <p>Your Premier Hub for Music Bands, MCs, Artists, and Equipment Hire!</p>
         <br><br><p>&darr;</p>
       </div>

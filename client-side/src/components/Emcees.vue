@@ -43,8 +43,8 @@ export default {
             axios.get(path)
             .then((res) => {
                 const users = res.data.users;
-                const startIndex = 5;
-                const endIndex = 21;
+                const startIndex = 21;
+                const endIndex = 30;
 
                 const  firstTenUsers = users.slice(startIndex, endIndex);
                 this.emcees_list = firstTenUsers;
@@ -96,6 +96,7 @@ export default {
   font-family: 'Truculenta', sans-serif;
   font-size: 45px;
 }
+
 h2 {
     font-family: 'Truculenta', sans-serif;
     font-size: 45px;
@@ -135,4 +136,49 @@ h2 {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .listed {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 85%;
+    margin: auto auto 45px auto;
+    height: 250px;
+  }
+
+  .card img {
+    width: 100px;
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  .txt {
+    width: 100%;
+    margin: 0 5px 0 20px;
+  }
+
+  .txt h2 {
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .txt h3 {
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .txt p {
+    font-size: 12px;
+  }
+
+  .txt a {
+    font-size: 8px;
+  }
+}
 </style>

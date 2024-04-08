@@ -14,6 +14,19 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="email" name="" placeholder="E-mail" id="email">
                 <input type="number" name="phone" placeholder="Phone" id="phone">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="select a service" id="">
+                    <option value="Catering Solution">Catering Solution</option>
+                    <option value="Emcee">Emcee</option>
+                    <option value="Artist">Artist</option>
+                    <option value="Equipment Lessor">Equipment Lessor</option>
+                </select>
+                <input type="text" name="" placeholder="" id="">
+                <select name="free cookie">
+                    <option>Free Cookie?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">...</option>
+                </select>
             </span>
             <button type="submit">sign up</button>
         </div>
@@ -54,7 +67,7 @@
 .over {
     background-color: #22222282;
     width: 55%;
-    height: 55%;
+    height: 65%;
     z-index: 1;
     position: absolute;
     display: flex;
@@ -124,4 +137,17 @@
     text-decoration: underline;
     color: #555;
 }
+
+.over select {
+    width: 25%;
+    height: 45px;
+    font-family: 'Open sans', sans-serif;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.over select option {
+    background-color: #22222282;
+}
+
 </style>
