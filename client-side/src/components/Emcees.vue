@@ -37,7 +37,9 @@ export default {
     },
     methods: {
         getEmcees() {
-            const path = "http://localhost:5000/api/mc";
+          // commented the line below to point to the deployed backend
+            // const path = "http://localhost:5000/api/mc";
+            const path = "https://portfolio-project-eventease.onrender.com/api/mc";
             axios.get(path)
             .then((res) => {
                 const users = res.data.users;

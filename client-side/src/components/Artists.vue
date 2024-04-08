@@ -37,7 +37,9 @@ export default {
     },
     methods: {
         getArtists() {
-            const path = "http://localhost:5000/api/music_band";
+          // changed the line below to point to the deployed link for the backend
+            // const path = "http://localhost:5000/api/music_band";
+            const path = "https://portfolio-project-eventease.onrender.com/api/music_band";
             axios.get(path)
             .then((res) => {
                 const users = res.data.users;

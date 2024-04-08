@@ -35,7 +35,9 @@ export default {
     },
     methods: {
         getEquipment() {
-            const path = "http://localhost:5000/api/equipment";
+          // commenting the line below to point to the link of the backend
+            // const path = "http://localhost:5000/api/equipment";
+            const path = "https://portfolio-project-eventease.onrender.com/api/equipment";
             axios.get(path)
             .then((res) => {
                 const equipment = res.data.products;
